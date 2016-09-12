@@ -1,0 +1,283 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACCEPT	cir.h	/^const double ACCEPT = 150;$/;"	v
+AutoTaskScheduler	ParallelThreadDE.h	/^class AutoTaskScheduler:public TaskScheduler{$/;"	c
+BasicTaskScheduler	ParallelThreadDE.h	/^class BasicTaskScheduler:public TaskScheduler{$/;"	c
+C	cir.h	/^const double L=0.00020000, C=0.001000000;$/;"	v
+C2	cir.h	/^double RC3,C2,\/*RC2,*\/C3,R2;$/;"	m	class:CirHelper
+C3	cir.h	/^double RC3,C2,\/*RC2,*\/C3,R2;$/;"	m	class:CirHelper
+C4	cir.h	/^double C4,R4,R1;$/;"	m	class:CirHelper
+CR	ParallelDE.h	/^		double F,CR;$/;"	m	class:ParallelDE
+CR	ParallelThreadDE.h	/^    double F,CR;$/;"	m	class:ParallelThreadDE
+CS	cir.h	/^const int CS=sizeof(STD_C)\/sizeof(double);\/\/CS=24;$/;"	v
+CirHelper	cir.h	/^class CirHelper{$/;"	c
+DEBUG	main.cpp	14;"	d	file:
+Denforce	cir.h	/^int stage, Vcon, Denforce, condition,\/*=9,*\/ k;$/;"	m	class:CirHelper
+Dt	cir.h	117;"	d
+EnforceSWc	cir.h	/^void EnforceSWc()$/;"	f	class:CirHelper
+Eref	cir.h	/^double Eref()$/;"	f	class:CirHelper
+Eref1	cir.h	113;"	d
+F	ParallelDE.h	/^		double F,CR;$/;"	m	class:ParallelDE
+F	ParallelThreadDE.h	/^    double F,CR;$/;"	m	class:ParallelThreadDE
+Imax	cir.h	115;"	d
+IntHandler	main.cpp	/^void IntHandler(int s){$/;"	f
+K0	cir.h	/^double K0[nX], K1[nX];$/;"	m	class:CirHelper
+K1	cir.h	/^double K0[nX], K1[nX];$/;"	m	class:CirHelper
+L	cir.h	/^const double L=0.00020000, C=0.001000000;$/;"	v
+LCbranch	cir.h	/^void LCbranch(double *ptr)$/;"	f	class:CirHelper
+MESS_ASSIGN	ParallelThreadDE.h	218;"	d
+MESS_ASSIGN	ParallelThreadDE.h	82;"	d
+MESS_CANCEL	ParallelThreadDE.h	219;"	d
+MESS_CANCEL	ParallelThreadDE.h	83;"	d
+MESS_END	ParallelDE.h	208;"	d
+MESS_EVAL_ARRAY	ParallelDE.h	209;"	d
+MESS_EVAL_ARRAY	ParallelThreadDE.h	85;"	d
+MESS_QUIT	ParallelThreadDE.h	217;"	d
+MESS_QUIT	ParallelThreadDE.h	81;"	d
+MESS_REFRESH	ParallelThreadDE.h	220;"	d
+MESS_REFRESH	ParallelThreadDE.h	84;"	d
+MainProgram	main.cpp	/^int MainProgram(MPIHelper*mpi,int run,int MaxRun,int configID,EA *de,Function*f,SearchParam*param,bool isFindMin=true){$/;"	f
+NOT_USED	main.cpp	15;"	d	file:
+OF2	cir.h	/^double	overshoot,undershoot,PF1,OF4,OF2,ov,uv,time_con;$/;"	m	class:CirHelper
+OF4	cir.h	/^double	overshoot,undershoot,PF1,OF4,OF2,ov,uv,time_con;$/;"	m	class:CirHelper
+PEC_FUNCTION_H	pecFunction.h	2;"	d
+PF1	cir.h	/^double	overshoot,undershoot,PF1,OF4,OF2,ov,uv,time_con;$/;"	m	class:CirHelper
+ParallelDE	ParallelDE.h	/^		ParallelDE(){}$/;"	f	class:ParallelDE
+ParallelDE	ParallelDE.h	/^		ParallelDE(MPIHelper *h):mpi(h),save(0){$/;"	f	class:ParallelDE
+ParallelDE	ParallelDE.h	/^		ParallelDE(MPIHelper *h,SearchParam*p):mpi(h),param(p){$/;"	f	class:ParallelDE
+ParallelDE	ParallelDE.h	/^class ParallelDE:public EA$/;"	c
+ParallelThreadDE	ParallelThreadDE.h	/^        ParallelThreadDE(){$/;"	f	class:ParallelThreadDE
+ParallelThreadDE	ParallelThreadDE.h	/^        ParallelThreadDE(MPIHelper *h){$/;"	f	class:ParallelThreadDE
+ParallelThreadDE	ParallelThreadDE.h	/^        ParallelThreadDE(MPIHelper *h,SearchParam*p){$/;"	f	class:ParallelThreadDE
+ParallelThreadDE	ParallelThreadDE.h	/^class ParallelThreadDE:public EA$/;"	c
+PopSize	ParallelDE.h	/^		int PopSize;$/;"	m	class:ParallelDE
+PopSize	ParallelThreadDE.h	/^    int PopSize;$/;"	m	class:ParallelThreadDE
+R	cir.h	/^double R;$/;"	m	class:CirHelper
+R1	cir.h	/^double C4,R4,R1;$/;"	m	class:CirHelper
+R2	cir.h	/^double RC3,C2,\/*RC2,*\/C3,R2;$/;"	m	class:CirHelper
+R4	cir.h	/^double C4,R4,R1;$/;"	m	class:CirHelper
+RC	cir.h	99;"	d
+RC2	cir.h	102;"	d
+RC3	cir.h	/^double RC3,C2,\/*RC2,*\/C3,R2;$/;"	m	class:CirHelper
+RC4	cir.h	110;"	d
+RD	cir.h	92;"	d
+RE	cir.h	91;"	d
+RL	cir.h	98;"	d
+RS	cir.h	/^const int RS=sizeof(STD_R)\/sizeof(double);\/\/RS=74$/;"	v
+RT	cir.h	93;"	d
+STD_C	cir.h	/^const double STD_C[]={1.0,1.1,1.2,1.3,1.5,1.6,1.8,2.0,2.2,2.4,2.7,3.0,3.3,3.6,3.9,4.3,4.7,5.1,5.6,6.2,6.8,7.5,8.2,9.1,10};$/;"	v
+STD_R	cir.h	/^const double STD_R[]={100,110,120,130,150,160,180,200,220,240,270,300,330,360,390,430,470,510,560,620,680,750,820,910,$/;"	v
+SW	cir.h	/^double X[nX], V[nV], SW[nSW];$/;"	m	class:CirHelper
+SW0	cir.h	/^double X0[nX],V0[nV],SW0[nSW];$/;"	m	class:CirHelper
+SW2	cir.h	/^double X2[nX],V2[nV],SW2[nSW];$/;"	m	class:CirHelper
+SaveData	ParallelDE.h	149;"	d
+SaveData	ParallelThreadDE.h	789;"	d
+Spqa	cir.h	/^void Spqa()$/;"	f	class:CirHelper
+Task	ParallelThreadDE.h	/^    Task(){$/;"	f	class:Task
+Task	ParallelThreadDE.h	/^class Task{$/;"	c
+TaskScheduler	ParallelThreadDE.h	/^class TaskScheduler{$/;"	c
+Ts	cir.h	116;"	d
+TwoValue	ParallelThreadDE.h	/^        TwoValue(){$/;"	f	struct:AutoTaskScheduler::TwoValue
+TwoValue	ParallelThreadDE.h	/^    struct TwoValue{$/;"	s	class:AutoTaskScheduler
+UNUSED	pecFunction.h	6;"	d
+UpdateK	cir.h	/^void UpdateK()$/;"	f	class:CirHelper
+UpdateSW	cir.h	/^void UpdateSW()$/;"	f	class:CirHelper
+V	cir.h	/^double X[nX], V[nV], SW[nSW];$/;"	m	class:CirHelper
+V0	cir.h	/^double X0[nX],V0[nV],SW0[nSW];$/;"	m	class:CirHelper
+V2	cir.h	/^double X2[nX],V2[nV],SW2[nSW];$/;"	m	class:CirHelper
+Vcon	cir.h	/^int stage, Vcon, Denforce, condition,\/*=9,*\/ k;$/;"	m	class:CirHelper
+Vg	cir.h	/^double Vg()$/;"	f	class:CirHelper
+Vg1	cir.h	/^double Vg1;$/;"	m	class:CirHelper
+Vout	cir.h	/^double Vout[31252];$/;"	m	class:CirHelper
+X	cir.h	/^double X[nX], V[nV], SW[nSW];$/;"	m	class:CirHelper
+X0	cir.h	/^double X0[nX],V0[nV],SW0[nSW];$/;"	m	class:CirHelper
+X2	cir.h	/^double X2[nX],V2[nV],SW2[nSW];$/;"	m	class:CirHelper
+_objective	cir.h	/^double _objective(double x[])$/;"	f	class:CirHelper
+_objective	cir.h	/^double _objective(double x[],double y[])$/;"	f	class:CirHelper
+acceptTask	ParallelThreadDE.h	/^    int acceptTask(){$/;"	f	class:AutoTaskScheduler
+addKeyValue	ParallelThreadDE.h	/^        void addKeyValue(int k,double value){$/;"	f	struct:AutoTaskScheduler::TwoValue
+addSave	ParallelDE.h	/^		void addSave(Save *s){$/;"	f	class:ParallelDE
+addSave	ParallelThreadDE.h	/^        void addSave(Save *s){$/;"	f	class:ParallelThreadDE
+addTask	ParallelThreadDE.h	/^    virtual void addTask(const vector<Task> &t){}$/;"	f	class:TaskScheduler
+addTask	ParallelThreadDE.h	/^    void addTask(const vector<Task> &t){$/;"	f	class:AutoTaskScheduler
+addTask	ParallelThreadDE.h	/^    void addTask(const vector<Task> &t){$/;"	f	class:BasicTaskScheduler
+adjusts	ParallelThreadDE.h	/^    bool adjusts(){$/;"	f	class:AutoTaskScheduler
+alpha	cir.h	114;"	d
+assignTaskToProcess	ParallelThreadDE.h	/^    void assignTaskToProcess(int tid,int pid){$/;"	f	class:AutoTaskScheduler
+bestI	ParallelDE.h	/^		int bestI;$/;"	m	class:ParallelDE
+bestI	ParallelThreadDE.h	/^    int bestI;$/;"	m	class:ParallelThreadDE
+c	pecFunction.h	/^	CirHelper c;$/;"	v
+calPriority	ParallelThreadDE.h	/^        void calPriority(){$/;"	f	struct:AutoTaskScheduler::TwoValue
+calulateBestI	ParallelDE.h	/^		void calulateBestI(){$/;"	f	class:ParallelDE
+calulateBestI	ParallelThreadDE.h	/^        void calulateBestI(){$/;"	f	class:ParallelThreadDE
+cancelTask	ParallelThreadDE.h	/^            void cancelTask(int taskid){$/;"	f	class:AutoTaskScheduler
+chk_stage	cir.h	/^int chk_stage()$/;"	f	class:CirHelper
+cir	cir.h	/^void cir()$/;"	f	class:CirHelper
+clientThread	ParallelThreadDE.h	/^void * clientThread(void *arg){$/;"	f
+condition	cir.h	/^int stage, Vcon, Denforce, condition,\/*=9,*\/ k;$/;"	m	class:CirHelper
+ctasks	ParallelThreadDE.h	/^            map<int,Task> ctasks;$/;"	m	class:AutoTaskScheduler
+de	main.cpp	/^EA *de=0;$/;"	v
+debugid	ParallelThreadDE.h	/^    int debugid;$/;"	m	class:Task
+delKey	ParallelThreadDE.h	/^        void delKey(int k){$/;"	f	struct:AutoTaskScheduler::TwoValue
+delta	cir.h	82;"	d
+doTask	ParallelThreadDE.h	/^    void doTask(){$/;"	f	class:Task
+do_stage	cir.h	/^void do_stage()$/;"	f	class:CirHelper
+end	ParallelThreadDE.h	/^    virtual void end(){}$/;"	f	class:TaskScheduler
+end	ParallelThreadDE.h	/^    void end(){$/;"	f	class:AutoTaskScheduler
+end	ParallelThreadDE.h	/^    void end(){$/;"	f	class:BasicTaskScheduler
+endEvaluate	ParallelDE.h	/^		void endEvaluate(){$/;"	f	class:ParallelDE
+endofcycle	cir.h	/^void endofcycle()$/;"	f	class:CirHelper
+evaluatePopulation	ParallelDE.h	/^		void evaluatePopulation(vector<vector<double> >&xs,vector<double>&fx){$/;"	f	class:ParallelDE
+evaluatePopulation	ParallelThreadDE.h	/^        void evaluatePopulation(vector<vector<double> >&xs,vector<double>&fx){$/;"	f	class:ParallelThreadDE
+f	ParallelDE.h	/^		Function *f;$/;"	m	class:ParallelDE
+f	ParallelThreadDE.h	/^    Function *f;$/;"	m	class:ParallelThreadDE
+f	ParallelThreadDE.h	/^    Function*f;$/;"	m	class:AutoTaskScheduler
+f	ParallelThreadDE.h	/^    Function*f;$/;"	m	class:BasicTaskScheduler
+f	ParallelThreadDE.h	/^    Function*f;$/;"	m	class:Task
+feedback	cir.h	/^void feedback()$/;"	f	class:CirHelper
+findSWinstant	cir.h	/^double findSWinstant(int SWp, double ref)$/;"	f	class:CirHelper
+findend	cir.h	/^void findend()$/;"	f	class:CirHelper
+findramp	cir.h	/^double findramp(int Vp, double gnd)$/;"	f	class:CirHelper
+fx	ParallelDE.h	/^		vector<double>fx;$/;"	m	class:ParallelDE
+fx	ParallelThreadDE.h	/^    double fx;$/;"	m	class:Task
+fx	ParallelThreadDE.h	/^    vector<double>fx;$/;"	m	class:ParallelThreadDE
+generateSplitTask	ParallelDE.h	/^		void generateSplitTask(int numTask,int numProcesses,vector<int>&task){$/;"	f	class:ParallelDE
+generateSplitTask	ParallelThreadDE.h	/^        void generateSplitTask(int numTask,int numProcesses,vector<int>&task){$/;"	f	class:ParallelThreadDE
+generateSplitTask	ParallelThreadDE.h	/^    void generateSplitTask(int numTask,int numProcesses,vector<int>&task){$/;"	f	class:BasicTaskScheduler
+getBestFx	ParallelDE.h	/^		double getBestFx()const{$/;"	f	class:ParallelDE
+getBestFx	ParallelThreadDE.h	/^    double getBestFx()const{$/;"	f	class:ParallelThreadDE
+getFx	ParallelThreadDE.h	/^    double getFx(){$/;"	f	class:Task
+getIndex	ParallelThreadDE.h	/^        int getIndex(int value){$/;"	f	struct:AutoTaskScheduler::TwoValue
+getKey	ParallelThreadDE.h	/^        int getKey(int index){$/;"	f	struct:AutoTaskScheduler::TwoValue
+getMin	ParallelDE.h	/^		virtual double getMin(Function *f,int MaxFEs,vector<double>&out_x,double &out_fx){$/;"	f	class:ParallelDE
+getMin	ParallelThreadDE.h	/^        virtual double getMin(Function *f,int MaxFEs,vector<double>&out_x,double &out_fx){$/;"	f	class:ParallelThreadDE
+getName	ParallelThreadDE.h	/^        virtual const char *getName(){return "AutoTaskScheduler";}$/;"	f	class:AutoTaskScheduler
+getName	ParallelThreadDE.h	/^    virtual const char *getName(){return "BasicTaskScheduler";}$/;"	f	class:BasicTaskScheduler
+getName	ParallelThreadDE.h	/^    virtual const char *getName(){return "TaskScheduler";}$/;"	f	class:TaskScheduler
+getNumTasks	ParallelThreadDE.h	/^            int getNumTasks(){$/;"	f	class:AutoTaskScheduler
+getNumUnfinishedTasks	ParallelThreadDE.h	/^    int getNumUnfinishedTasks(){$/;"	f	class:AutoTaskScheduler
+getNumValue	ParallelThreadDE.h	/^int getNumValue(){$/;"	f	struct:AutoTaskScheduler::TwoValue
+getSortedTask	ParallelThreadDE.h	/^    vector<int>getSortedTask(const vector<int>&pids){$/;"	f	class:AutoTaskScheduler
+getTask	ParallelThreadDE.h	/^    Task* getTask(int tid){$/;"	f	class:AutoTaskScheduler
+getTasks	ParallelThreadDE.h	/^    const vector<Task> getTasks()const{$/;"	f	class:AutoTaskScheduler
+getTasks	ParallelThreadDE.h	/^    const vector<Task> getTasks()const{$/;"	f	class:BasicTaskScheduler
+getTasks	ParallelThreadDE.h	/^    virtual const vector<Task> getTasks()const{return vector<Task>();}$/;"	f	class:TaskScheduler
+getValue	ParallelThreadDE.h	/^        double getValue(int k){$/;"	f	struct:AutoTaskScheduler::TwoValue
+h1	cir.h	75;"	d
+h2	cir.h	76;"	d
+h3	cir.h	77;"	d
+hasKey	ParallelThreadDE.h	/^        bool hasKey(int k){$/;"	f	struct:AutoTaskScheduler::TwoValue
+id	ParallelThreadDE.h	/^    int id;$/;"	m	class:Task
+idcounter	ParallelThreadDE.h	/^    static int idcounter;$/;"	m	class:Task
+idcounter	ParallelThreadDE.h	/^int Task::idcounter=0;$/;"	m	class:Task
+imgUpdateSW	cir.h	/^void imgUpdateSW()$/;"	f	class:CirHelper
+init	ParallelThreadDE.h	/^        void init(MPIHelper*mpi,Function*f,int numDim){$/;"	f	class:AutoTaskScheduler
+init	ParallelThreadDE.h	/^    virtual void init(MPIHelper*mpi,Function*f,int numDim){}$/;"	f	class:TaskScheduler
+init	ParallelThreadDE.h	/^    void init(MPIHelper*mpi,Function*f,int numDim){$/;"	f	class:BasicTaskScheduler
+init	ParallelThreadDE.h	/^    void init(vector<double>&x){$/;"	f	class:Task
+initParam	ParallelDE.h	/^		void initParam(SearchParam *param){$/;"	f	class:ParallelDE
+initParam	ParallelThreadDE.h	/^        void initParam(SearchParam *param){$/;"	f	class:ParallelThreadDE
+init_parameters	cir.h	/^void init_parameters()$/;"	f	class:CirHelper
+isAllTaskFinished	ParallelThreadDE.h	/^    bool isAllTaskFinished(){$/;"	f	class:AutoTaskScheduler
+isCanceled	ParallelThreadDE.h	/^    bool isCanceled;$/;"	m	class:Task
+isEmpty	ParallelThreadDE.h	/^            bool isEmpty(){$/;"	f	class:AutoTaskScheduler
+isFinished	ParallelThreadDE.h	/^    bool isFinished;$/;"	m	class:Task
+k	cir.h	/^int stage, Vcon, Denforce, condition,\/*=9,*\/ k;$/;"	m	class:CirHelper
+main	main.cpp	/^int main(int argc,char *argv[]){$/;"	f
+masterCancelTask	ParallelThreadDE.h	/^    void masterCancelTask(int pid,int tid){$/;"	f	class:AutoTaskScheduler
+mf	cir.h	83;"	d
+mpi	ParallelDE.h	/^		MPIHelper*mpi;$/;"	m	class:ParallelDE
+mpi	ParallelThreadDE.h	/^    MPIHelper *mpi;$/;"	m	class:AutoTaskScheduler
+mpi	ParallelThreadDE.h	/^    MPIHelper *mpi;$/;"	m	class:BasicTaskScheduler
+mpi	ParallelThreadDE.h	/^    MPIHelper*mpi;$/;"	m	class:ParallelThreadDE
+mpi	ParallelThreadDE.h	/^    MPIHelper*mpi;$/;"	m	class:Task
+nSW	cir.h	81;"	d
+nV	cir.h	80;"	d
+nX	cir.h	79;"	d
+numDim	ParallelDE.h	/^		int numDim;$/;"	m	class:ParallelDE
+numDim	ParallelThreadDE.h	/^    int numDim;$/;"	m	class:AutoTaskScheduler
+numDim	ParallelThreadDE.h	/^    int numDim;$/;"	m	class:BasicTaskScheduler
+numDim	ParallelThreadDE.h	/^    int numDim;$/;"	m	class:ParallelThreadDE
+numSlaves	ParallelThreadDE.h	/^    int numSlaves;$/;"	m	class:AutoTaskScheduler
+numSlaves	ParallelThreadDE.h	/^    int numSlaves;$/;"	m	class:BasicTaskScheduler
+operator <	ParallelThreadDE.h	/^        bool operator<(const TwoValue&p)const{$/;"	f	struct:AutoTaskScheduler::TwoValue
+output	cir.h	/^void output()$/;"	f	class:CirHelper
+output1	cir.h	/^FILE *output1;                    \/* X[0] output *\/$/;"	m	class:CirHelper
+output2	cir.h	/^FILE *output2;                    \/* Vout output*\/$/;"	m	class:CirHelper
+ov	cir.h	/^double	overshoot,undershoot,PF1,OF4,OF2,ov,uv,time_con;$/;"	m	class:CirHelper
+overshoot	cir.h	/^double	overshoot,undershoot,PF1,OF4,OF2,ov,uv,time_con;$/;"	m	class:CirHelper
+p_function	cir.h	/^double p_function;$/;"	m	class:CirHelper
+param	ParallelDE.h	/^		SearchParam *param;$/;"	m	class:ParallelDE
+param	ParallelThreadDE.h	/^    SearchParam *param;$/;"	m	class:ParallelThreadDE
+pop_value	cir.h	/^void pop_value()$/;"	f	class:CirHelper
+pqa	cir.h	/^void pqa()$/;"	f	class:CirHelper
+priority	ParallelThreadDE.h	/^        double priority;$/;"	m	struct:AutoTaskScheduler::TwoValue
+push_value	cir.h	/^void push_value()$/;"	f	class:CirHelper
+range	ParallelDE.h	/^		vector<vector<double> >range;$/;"	m	class:ParallelDE
+range	ParallelThreadDE.h	/^    vector<vector<double> >range;$/;"	m	class:ParallelThreadDE
+refreshID	ParallelThreadDE.h	/^    int refreshID;$/;"	m	class:AutoTaskScheduler
+refreshID	ParallelThreadDE.h	/^    int refreshID;$/;"	m	class:Task
+refreshSlave	ParallelThreadDE.h	/^    void refreshSlave(){$/;"	f	class:AutoTaskScheduler
+restart_stage	cir.h	/^void restart_stage()$/;"	f	class:CirHelper
+save	ParallelDE.h	/^		Save *save;$/;"	m	class:ParallelDE
+save	ParallelThreadDE.h	/^    Save *save;$/;"	m	class:ParallelThreadDE
+saveConfigData	main.cpp	/^	void saveConfigData(int id,const char *f,const char *algorithm,const char *param,int run,int MaxRun,int numOfProcesses,int MaxFEs,int PopSize,int NumDim,double F,double CR,const char *state,double usedTime,double absError,$/;"	f
+scheduler	ParallelThreadDE.h	/^    TaskScheduler *scheduler;$/;"	m	class:ParallelThreadDE
+schema1_updateX	ParallelDE.h	/^		void schema1_updateX(){$/;"	f	class:ParallelDE
+schema1_updateX	ParallelThreadDE.h	/^void schema1_updateX(){$/;"	f	class:ParallelThreadDE
+setParam	ParallelDE.h	/^		void setParam(MPIHelper *h,SearchParam*p){$/;"	f	class:ParallelDE
+setParam	ParallelThreadDE.h	/^        void setParam(MPIHelper *h,SearchParam*p){$/;"	f	class:ParallelThreadDE
+setScheduler	ParallelThreadDE.h	/^        void setScheduler(TaskScheduler*s){$/;"	f	class:ParallelThreadDE
+setinit	cir.h	/^void setinit()$/;"	f	class:CirHelper
+settling_time	cir.h	/^double settling_time;$/;"	m	class:CirHelper
+settlingtime	cir.h	/^int settlingtime;$/;"	m	class:CirHelper
+simulateTo	cir.h	/^void simulateTo(double endtime)$/;"	f	class:CirHelper
+slavesTasks	ParallelThreadDE.h	/^    vector<TwoValue>slavesTasks;\/\/0 is not used.$/;"	m	class:AutoTaskScheduler
+snapOneSWcycle	cir.h	/^void snapOneSWcycle()$/;"	f	class:CirHelper
+snapThrough	cir.h	/^void snapThrough(double STEP)$/;"	f	class:CirHelper
+stage	cir.h	/^int stage, Vcon, Denforce, condition,\/*=9,*\/ k;$/;"	m	class:CirHelper
+stage1	cir.h	/^void stage1()$/;"	f	class:CirHelper
+stage2	cir.h	/^void stage2()$/;"	f	class:CirHelper
+stage3	cir.h	/^void stage3()$/;"	f	class:CirHelper
+stage4	cir.h	/^void stage4()$/;"	f	class:CirHelper
+start	ParallelThreadDE.h	/^        void start(){$/;"	f	class:AutoTaskScheduler
+start	ParallelThreadDE.h	/^    virtual void start(){}$/;"	f	class:TaskScheduler
+start	ParallelThreadDE.h	/^void start(){$/;"	f	class:BasicTaskScheduler
+startTask	ParallelThreadDE.h	/^            void startTask(Task*t){$/;"	f	class:AutoTaskScheduler
+t	cir.h	/^double times, t;$/;"	m	class:CirHelper
+tasks	ParallelThreadDE.h	/^    vector<Task> tasks;$/;"	m	class:AutoTaskScheduler
+tasks	ParallelThreadDE.h	/^    vector<Task> tasks;$/;"	m	class:BasicTaskScheduler
+test	cir.h	/^void test()$/;"	f	class:CirHelper
+thread	ParallelThreadDE.h	/^    pthread_t thread;$/;"	m	class:Task
+time_con	cir.h	/^double	overshoot,undershoot,PF1,OF4,OF2,ov,uv,time_con;$/;"	m	class:CirHelper
+time_sim	cir.h	/^double time_sim[32000];$/;"	m	class:CirHelper
+times	cir.h	/^double times, t;$/;"	m	class:CirHelper
+tmpFx	ParallelDE.h	/^		vector<double>tmpFx;$/;"	m	class:ParallelDE
+tmpFx	ParallelThreadDE.h	/^    vector<double>tmpFx;$/;"	m	class:ParallelThreadDE
+tmpX	ParallelDE.h	/^		vector<vector<double> >tmpX;$/;"	m	class:ParallelDE
+tmpX	ParallelThreadDE.h	/^    vector<vector<double> >tmpX;$/;"	m	class:ParallelThreadDE
+tx	ParallelDE.h	/^		vector<double>tx;$/;"	m	class:ParallelDE
+tx	ParallelThreadDE.h	/^    vector<double>tx;$/;"	m	class:ParallelThreadDE
+undershoot	cir.h	/^double	overshoot,undershoot,PF1,OF4,OF2,ov,uv,time_con;$/;"	m	class:CirHelper
+update	ParallelDE.h	/^		void update(int maxGeneration){$/;"	f	class:ParallelDE
+update	ParallelThreadDE.h	/^    void update(int maxGeneration){$/;"	f	class:ParallelThreadDE
+updateX	ParallelDE.h	/^		inline void updateX(){$/;"	f	class:ParallelDE
+updateX	ParallelThreadDE.h	/^    inline void updateX(){$/;"	f	class:ParallelThreadDE
+updateX_schema2	ParallelDE.h	/^		void updateX_schema2(){$/;"	f	class:ParallelDE
+updateX_schema2	ParallelThreadDE.h	/^void updateX_schema2(){$/;"	f	class:ParallelThreadDE
+updateX_schema3	ParallelDE.h	/^		void updateX_schema3(){$/;"	f	class:ParallelDE
+updateX_schema3	ParallelThreadDE.h	/^    void updateX_schema3(){$/;"	f	class:ParallelThreadDE
+usedTime	ParallelThreadDE.h	/^        double usedTime;$/;"	m	struct:AutoTaskScheduler::TwoValue
+uv	cir.h	/^double	overshoot,undershoot,PF1,OF4,OF2,ov,uv,time_con;$/;"	m	class:CirHelper
+v	ParallelThreadDE.h	/^        int v[2]; double vv[2];$/;"	m	struct:AutoTaskScheduler::TwoValue
+vv	ParallelThreadDE.h	/^        int v[2]; double vv[2];$/;"	m	struct:AutoTaskScheduler::TwoValue
+x	ParallelDE.h	/^		vector<vector<double> >x;\/\/x,trail x.$/;"	m	class:ParallelDE
+x	ParallelThreadDE.h	/^    vector<double>x;$/;"	m	class:Task
+x	ParallelThreadDE.h	/^    vector<vector<double> >x;\/\/x,trail x.$/;"	m	class:ParallelThreadDE
+zero	cir.h	78;"	d
+~ParallelDE	ParallelDE.h	/^		~ParallelDE(){$/;"	f	class:ParallelDE
+~ParallelThreadDE	ParallelThreadDE.h	/^        ~ParallelThreadDE(){$/;"	f	class:ParallelThreadDE
