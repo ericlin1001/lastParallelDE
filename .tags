@@ -30,6 +30,11 @@ AddMember	include/rapidjson/document.h	/^    GenericValue& AddMember(GenericValu
 AddMember	include/rapidjson/document.h	/^    GenericValue& AddMember(StringRefType name, GenericValue& value, Allocator& allocator) {$/;"	f	class:GenericValue	access:public	signature:(StringRefType name, GenericValue& value, Allocator& allocator)
 AddMember	include/rapidjson/document.h	/^    GenericValue& AddMember(StringRefType name, GenericValue&& value, Allocator& allocator) {$/;"	f	class:GenericValue	access:public	signature:(StringRefType name, GenericValue&& value, Allocator& allocator)
 AddMember	include/rapidjson/document.h	/^    GenericValue& AddMember(StringRefType name, StringRefType value, Allocator& allocator) {$/;"	f	class:GenericValue	access:public	signature:(StringRefType name, StringRefType value, Allocator& allocator)
+AllType	SaveResult.h	/^			AllType(){$/;"	f	class:SaveResult::AllType	access:public	signature:()
+AllType	SaveResult.h	/^			AllType(const char* v){$/;"	f	class:SaveResult::AllType	access:public	signature:(const char* v)
+AllType	SaveResult.h	/^			AllType(double v){$/;"	f	class:SaveResult::AllType	access:public	signature:(double v)
+AllType	SaveResult.h	/^			AllType(int v){$/;"	f	class:SaveResult::AllType	access:public	signature:(int v)
+AllType	SaveResult.h	/^	class AllType{$/;"	c	class:SaveResult	access:private
 AllocatorType	include/rapidjson/document.h	/^    typedef Allocator AllocatorType;                        \/\/!< Allocator type from template parameter.$/;"	t	class:GenericDocument	access:public
 AllocatorType	include/rapidjson/document.h	/^    typedef Allocator AllocatorType;                \/\/!< Allocator type from template parameter.$/;"	t	class:GenericValue	access:public
 AndExpr	include/rapidjson/internal/meta.h	/^template <typename C1, typename C2> struct AndExpr : AndExprCond<C1::Value, C2::Value>::Type {};$/;"	s	namespace:internal	inherits:AndExprCond::Type
@@ -380,7 +385,8 @@ CrtAllocator::Free	include/rapidjson/allocators.h	/^    static void Free(void *p
 CrtAllocator::Malloc	include/rapidjson/allocators.h	/^    void* Malloc(size_t size) { $/;"	f	class:CrtAllocator	access:public	signature:(size_t size)
 CrtAllocator::Realloc	include/rapidjson/allocators.h	/^    void* Realloc(void* originalPtr, size_t originalSize, size_t newSize) {$/;"	f	class:CrtAllocator	access:public	signature:(void* originalPtr, size_t originalSize, size_t newSize)
 CrtAllocator::kNeedFree	include/rapidjson/allocators.h	/^    static const bool kNeedFree = true;$/;"	m	class:CrtAllocator	access:public
-DEBUG	main.cpp	14;"	d	file:
+DEBUG	main.cpp	15;"	d	file:
+DOUBLE	SaveResult.h	/^		enum {INT,DOUBLE,STRING,UNKNOWN};$/;"	e	enum:SaveResult::AllType::__anon15
 Data	include/rapidjson/document.h	/^    union Data {$/;"	u	class:GenericValue	access:private
 Decode	include/rapidjson/encodings.h	/^    RAPIDJSON_FORCEINLINE static bool Decode(InputStream& is, unsigned* codepoint) {$/;"	f	struct:AutoUTF	access:public	signature:(InputStream& is, unsigned* codepoint)
 Decode	include/rapidjson/encodings.h	/^    static bool Decode(InputStream& is, unsigned* codepoint) {$/;"	f	struct:ASCII	access:public	signature:(InputStream& is, unsigned* codepoint)
@@ -1265,6 +1271,7 @@ IDHelper	include/IDHelper.h	/^class IDHelper{$/;"	c
 IDHelper::newID	include/IDHelper.h	/^		static int newID(const char *file=0){$/;"	f	class:IDHelper	access:public	signature:(const char *file=0)
 ID_HELPER_H	include/IDHelper.h	3;"	d
 INF	include/cec14_test_func.h	16;"	d
+INT	SaveResult.h	/^		enum {INT,DOUBLE,STRING,UNKNOWN};$/;"	e	enum:SaveResult::AllType::__anon15
 INT16_C	include/rapidjson/msinttypes/stdint.h	277;"	d
 INT16_C	include/rapidjson/msinttypes/stdint.h	55;"	d
 INT16_C	include/rapidjson/msinttypes/stdint.h	66;"	d
@@ -1499,7 +1506,7 @@ N	include/rapidjson/reader.h	1106;"	d
 N	include/rapidjson/reader.h	1120;"	d
 N16	include/rapidjson/reader.h	1107;"	d
 N16	include/rapidjson/reader.h	1121;"	d
-NOT_USED	main.cpp	15;"	d	file:
+NOT_USED	main.cpp	16;"	d	file:
 NeedPercentEncode	include/rapidjson/pointer.h	/^    bool NeedPercentEncode(Ch c) const {$/;"	f	class:GenericPointer	access:private	signature:(Ch c) const
 NextPositiveDouble	include/rapidjson/internal/ieee754.h	/^    double NextPositiveDouble() const {$/;"	f	class:internal::Double	access:public	signature:() const
 No	include/rapidjson/internal/meta.h	/^    typedef char (&No) [2];$/;"	t	struct:internal::IsBaseOfImpl	access:public
@@ -1993,6 +2000,7 @@ Reset	include/rapidjson/writer.h	/^    void Reset(OutputStream& os) {$/;"	f	clas
 Resize	include/rapidjson/internal/stack.h	/^    void Resize(size_t newCapacity) {$/;"	f	class:internal::Stack	access:private	signature:(size_t newCapacity)
 RightBracketToken	include/rapidjson/reader.h	/^        RightBracketToken,$/;"	e	enum:GenericReader::Token
 RightCurlyBracketToken	include/rapidjson/reader.h	/^        RightCurlyBracketToken,$/;"	e	enum:GenericReader::Token
+SAVE_RESULT_H	SaveResult.h	2;"	d
 SCNX16	include/rapidjson/msinttypes/inttypes.h	221;"	d
 SCNX32	include/rapidjson/msinttypes/inttypes.h	234;"	d
 SCNX64	include/rapidjson/msinttypes/inttypes.h	247;"	d
@@ -2094,6 +2102,7 @@ STATIC_ASSERTION_FAILURE	include/rapidjson/rapidjson.h	/^template <> struct STAT
 STATIC_ASSERTION_FAILURE::value	include/rapidjson/rapidjson.h	/^template <> struct STATIC_ASSERTION_FAILURE<true> { enum { value = 1 }; };$/;"	e	enum:STATIC_ASSERTION_FAILURE::__anon1
 STD_C	cir.h	/^const double STD_C[]={1.0,1.1,1.2,1.3,1.5,1.6,1.8,2.0,2.2,2.4,2.7,3.0,3.3,3.6,3.9,4.3,4.7,5.1,5.6,6.2,6.8,7.5,8.2,9.1,10};$/;"	v
 STD_R	cir.h	/^const double STD_R[]={100,110,120,130,150,160,180,200,220,240,270,300,330,360,390,430,470,510,560,620,680,750,820,910,$/;"	v
+STRING	SaveResult.h	/^		enum {INT,DOUBLE,STRING,UNKNOWN};$/;"	e	enum:SaveResult::AllType::__anon15
 SW	cir.h	/^double X[nX], V[nV], SW[nSW];$/;"	m	class:CirHelper	access:public
 SW0	cir.h	/^double X0[nX],V0[nV],SW0[nSW];$/;"	m	class:CirHelper	access:public
 SW2	cir.h	/^double X2[nX],V2[nV],SW2[nSW];$/;"	m	class:CirHelper	access:public
@@ -2119,6 +2128,39 @@ SaveData	include/BasicDE.h	173;"	d
 SaveData	include/BasicDE.h	65;"	d
 SaveData	include/BasicDE.h	66;"	d
 SaveData	include/BasicDE.h	73;"	d
+SaveResult	SaveResult.h	/^	SaveResult(const char *f=0){$/;"	f	class:SaveResult	access:public	signature:(const char *f=0)
+SaveResult	SaveResult.h	/^class SaveResult{$/;"	c
+SaveResult::AllType	SaveResult.h	/^	class AllType{$/;"	c	class:SaveResult	access:private
+SaveResult::AllType::AllType	SaveResult.h	/^			AllType(){$/;"	f	class:SaveResult::AllType	access:public	signature:()
+SaveResult::AllType::AllType	SaveResult.h	/^			AllType(const char* v){$/;"	f	class:SaveResult::AllType	access:public	signature:(const char* v)
+SaveResult::AllType::AllType	SaveResult.h	/^			AllType(double v){$/;"	f	class:SaveResult::AllType	access:public	signature:(double v)
+SaveResult::AllType::AllType	SaveResult.h	/^			AllType(int v){$/;"	f	class:SaveResult::AllType	access:public	signature:(int v)
+SaveResult::AllType::DOUBLE	SaveResult.h	/^		enum {INT,DOUBLE,STRING,UNKNOWN};$/;"	e	enum:SaveResult::AllType::__anon15
+SaveResult::AllType::INT	SaveResult.h	/^		enum {INT,DOUBLE,STRING,UNKNOWN};$/;"	e	enum:SaveResult::AllType::__anon15
+SaveResult::AllType::STRING	SaveResult.h	/^		enum {INT,DOUBLE,STRING,UNKNOWN};$/;"	e	enum:SaveResult::AllType::__anon15
+SaveResult::AllType::UNKNOWN	SaveResult.h	/^		enum {INT,DOUBLE,STRING,UNKNOWN};$/;"	e	enum:SaveResult::AllType::__anon15
+SaveResult::AllType::Value	SaveResult.h	/^		union Value{int i;double d;char s[50];};$/;"	u	class:SaveResult::AllType	access:private
+SaveResult::AllType::Value::d	SaveResult.h	/^		union Value{int i;double d;char s[50];};$/;"	m	union:SaveResult::AllType::Value	access:public
+SaveResult::AllType::Value::i	SaveResult.h	/^		union Value{int i;double d;char s[50];};$/;"	m	union:SaveResult::AllType::Value	access:public
+SaveResult::AllType::Value::s	SaveResult.h	/^		union Value{int i;double d;char s[50];};$/;"	m	union:SaveResult::AllType::Value	access:public
+SaveResult::AllType::save	SaveResult.h	/^			void save(ofstream&out){$/;"	f	class:SaveResult::AllType	access:public	signature:(ofstream&out)
+SaveResult::AllType::type	SaveResult.h	/^		int type;$/;"	m	class:SaveResult::AllType	access:private
+SaveResult::AllType::value	SaveResult.h	/^		Value value;$/;"	m	class:SaveResult::AllType	access:private
+SaveResult::SaveResult	SaveResult.h	/^	SaveResult(const char *f=0){$/;"	f	class:SaveResult	access:public	signature:(const char *f=0)
+SaveResult::addType	SaveResult.h	/^	void addType(const char *name){$/;"	f	class:SaveResult	access:private	signature:(const char *name)
+SaveResult::file	SaveResult.h	/^		ofstream file;$/;"	m	class:SaveResult	access:private
+SaveResult::filename	SaveResult.h	/^	char filename[100];$/;"	m	class:SaveResult	access:private
+SaveResult::getIndex	SaveResult.h	/^	int getIndex(const char *name){$/;"	f	class:SaveResult	access:private	signature:(const char *name)
+SaveResult::id	SaveResult.h	/^	int id;$/;"	m	class:SaveResult	access:private
+SaveResult::next	SaveResult.h	/^	void next(){$/;"	f	class:SaveResult	access:public	signature:()
+SaveResult::ouputTypeNames	SaveResult.h	/^	void ouputTypeNames(){$/;"	f	class:SaveResult	access:private	signature:()
+SaveResult::recordID	SaveResult.h	/^	int recordID;$/;"	m	class:SaveResult	access:private
+SaveResult::save	SaveResult.h	/^	void save(){$/;"	f	class:SaveResult	access:public	signature:()
+SaveResult::set	SaveResult.h	/^	void set(const char *name,AllType v){$/;"	f	class:SaveResult	access:public	signature:(const char *name,AllType v)
+SaveResult::setupID	SaveResult.h	/^	void setupID(){$/;"	f	class:SaveResult	access:private	signature:()
+SaveResult::type	SaveResult.h	/^	vector<string>type;$/;"	m	class:SaveResult	access:private
+SaveResult::vs	SaveResult.h	/^	vector<AllType> vs;$/;"	m	class:SaveResult	access:private
+SaveResult::~SaveResult	SaveResult.h	/^	~SaveResult(){$/;"	f	class:SaveResult	access:public	signature:()
 SearchParam	include/BasicDE.h	/^typedef SettingParser SearchParam ;$/;"	t
 SearchParam	include/functions.h	/^typedef SettingParser SearchParam ;$/;"	t
 SelectIf	include/rapidjson/internal/meta.h	/^template <typename C, typename T1, typename T2> struct SelectIf : SelectIfCond<C::Value, T1, T2> {};$/;"	s	namespace:internal	inherits:SelectIfCond
@@ -2429,6 +2471,7 @@ UINT_LEAST16_MAX	include/rapidjson/msinttypes/stdint.h	201;"	d
 UINT_LEAST32_MAX	include/rapidjson/msinttypes/stdint.h	202;"	d
 UINT_LEAST64_MAX	include/rapidjson/msinttypes/stdint.h	203;"	d
 UINT_LEAST8_MAX	include/rapidjson/msinttypes/stdint.h	200;"	d
+UNKNOWN	SaveResult.h	/^		enum {INT,DOUBLE,STRING,UNKNOWN};$/;"	e	enum:SaveResult::AllType::__anon15
 UNUSED	pecFunction.h	6;"	d
 UTF16	include/rapidjson/encodings.h	/^struct UTF16 {$/;"	s
 UTF16::Ch	include/rapidjson/encodings.h	/^    typedef CharType Ch;$/;"	t	struct:UTF16	access:public
@@ -2498,6 +2541,7 @@ Validate	include/rapidjson/encodings.h	/^    static bool Validate(InputStream& i
 Validate	include/rapidjson/encodings.h	/^    static bool Validate(InputStream& is, OutputStream& os) {$/;"	f	struct:UTF16	access:public	signature:(InputStream& is, OutputStream& os)
 Validate	include/rapidjson/encodings.h	/^    static bool Validate(InputStream& is, OutputStream& os) {$/;"	f	struct:UTF32	access:public	signature:(InputStream& is, OutputStream& os)
 Validate	include/rapidjson/encodings.h	/^    static bool Validate(InputStream& is, OutputStream& os) {$/;"	f	struct:UTF8	access:public	signature:(InputStream& is, OutputStream& os)
+Value	SaveResult.h	/^		union Value{int i;double d;char s[50];};$/;"	u	class:SaveResult::AllType	access:private
 Value	include/rapidjson/document.h	/^typedef GenericValue<UTF8<> > Value;$/;"	t
 Value	include/rapidjson/internal/ieee754.h	/^    double Value() const { return d_; }$/;"	f	class:internal::Double	access:public	signature:() const
 Value	include/rapidjson/internal/meta.h	/^    enum { Value = (sizeof(Check(Host(), 0)) == sizeof(Yes)) };$/;"	e	enum:internal::IsBaseOfImpl::__anon10
@@ -2617,6 +2661,7 @@ addSave	include/functions.h	/^		virtual void addSave(Save *s){}$/;"	f	class:EA	a
 addTask	ParallelThreadDE.h	/^    virtual void addTask(const vector<Task> &t){}$/;"	f	class:TaskScheduler	access:public	signature:(const vector<Task> &t)
 addTask	ParallelThreadDE.h	/^    void addTask(const vector<Task> &t){$/;"	f	class:AutoTaskScheduler	access:public	signature:(const vector<Task> &t)
 addTask	ParallelThreadDE.h	/^    void addTask(const vector<Task> &t){$/;"	f	class:BasicTaskScheduler	access:public	signature:(const vector<Task> &t)
+addType	SaveResult.h	/^	void addType(const char *name){$/;"	f	class:SaveResult	access:private	signature:(const char *name)
 adjusts	ParallelThreadDE.h	/^    bool adjusts(){$/;"	f	class:AutoTaskScheduler	access:private	signature:()
 allocator_	include/rapidjson/document.h	/^          allocator_(rhs.allocator_),$/;"	p	class:GenericDocument	access:public	signature:(rhs.allocator_)
 allocator_	include/rapidjson/document.h	/^    Allocator* allocator_;$/;"	m	class:GenericDocument	access:private
@@ -2688,6 +2733,7 @@ current_	include/rapidjson/encodedstream.h	/^    Ch current_;$/;"	m	class:AutoUT
 current_	include/rapidjson/encodedstream.h	/^    Ch current_;$/;"	m	class:EncodedInputStream	access:private
 current_	include/rapidjson/filereadstream.h	/^    Ch *current_;$/;"	m	class:FileReadStream	access:private
 current_	include/rapidjson/filewritestream.h	/^    char *current_;$/;"	m	class:FileWriteStream	access:private
+d	SaveResult.h	/^		union Value{int i;double d;char s[50];};$/;"	m	union:SaveResult::AllType::Value	access:public
 d	include/rapidjson/document.h	/^        double d;$/;"	m	union:GenericValue::Number	access:public
 d_	include/rapidjson/document.h	/^        GenericDocument& d_;$/;"	m	struct:GenericDocument::ClearStackOnExit	access:private
 d_	include/rapidjson/internal/ieee754.h	/^        double d_;$/;"	m	union:internal::Double::__anon11	access:public
@@ -2751,7 +2797,9 @@ fbest	include/functions.h	/^		double fbest;$/;"	m	class:Function	access:private
 feCounter	include/functions.h	/^		int feCounter;$/;"	m	class:Function	access:private
 feedback	cir.h	/^void feedback()$/;"	f	class:CirHelper	access:public	signature:()
 ff	include/functions.h	/^	Function *ff;$/;"	m	class:FunctionReverse	access:private
+file	SaveResult.h	/^		ofstream file;$/;"	m	class:SaveResult	access:private
 file	include/settingParser.h	/^		char file[256];$/;"	m	class:SettingParser	access:private
+filename	SaveResult.h	/^	char filename[100];$/;"	m	class:SaveResult	access:private
 findSWinstant	cir.h	/^double findSWinstant(int SWp, double ref)$/;"	f	class:CirHelper	access:public	signature:(int SWp, double ref)
 findend	cir.h	/^void findend()$/;"	f	class:CirHelper	access:public	signature:()
 findramp	cir.h	/^double findramp(int Vp, double gnd)$/;"	f	class:CirHelper	access:public	signature:(int Vp, double gnd)
@@ -2794,6 +2842,7 @@ getFunction	include/functions.h	/^		Function*getFunction(int index)const{$/;"	f	
 getFx	ParallelThreadDE.h	/^    double getFx(){$/;"	f	class:Task	access:public	signature:()
 getID	include/MPIHelper.h	/^		int getID()const{return id;}$/;"	f	class:MPIHelper	access:public	signature:() const
 getIndex	ParallelThreadDE.h	/^        int getIndex(int value){$/;"	f	struct:AutoTaskScheduler::TwoValue	access:private	signature:(int value)
+getIndex	SaveResult.h	/^	int getIndex(const char *name){$/;"	f	class:SaveResult	access:private	signature:(const char *name)
 getInt	include/settingParser.h	/^		int getInt(const char *name)const{$/;"	f	class:SettingParser	access:public	signature:(const char *name) const
 getKey	ParallelThreadDE.h	/^        int getKey(int index){$/;"	f	struct:AutoTaskScheduler::TwoValue	access:public	signature:(int index)
 getMax	include/functions.h	/^		double getMax(Function *f,int MaxFEs,vector<double>&x,double &fx){$/;"	f	class:EA	access:public	signature:(Function *f,int MaxFEs,vector<double>&x,double &fx)
@@ -2858,6 +2907,7 @@ hf06	include/cec14_test_func.h	/^void hf06 (double *, double *, int, double *,do
 hf06	include/cec14_test_func.h	/^void hf06 (double *x, double *f, int nx, double *Os,double *Mr,int *S,int s_flag,int r_flag) \/* Hybrid Function 6 *\/$/;"	f	signature:(double *x, double *f, int nx, double *Os,double *Mr,int *S,int s_flag,int r_flag)
 hgbat_func	include/cec14_test_func.h	/^void hgbat_func (double *, double *, int , double *,double *, int, int); \/* HGBat  *\/$/;"	p	signature:(double *, double *, int , double *,double *, int, int)
 hgbat_func	include/cec14_test_func.h	/^void hgbat_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* HGBat, provdided by Hans-Georg Beyer (HGB)*\/$/;"	f	signature:(double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag)
+i	SaveResult.h	/^		union Value{int i;double d;char s[50];};$/;"	m	union:SaveResult::AllType::Value	access:public
 i	include/rapidjson/document.h	/^            int i;$/;"	m	struct:GenericValue::Number::I	access:public
 i	include/rapidjson/document.h	/^        }i;$/;"	m	union:GenericValue::Number	typeref:struct:GenericValue::Number::I	access:public
 i	include/utils.h	/^	int i;$/;"	m	class:RandomPermutation	access:private
@@ -2865,6 +2915,7 @@ i32toa	include/rapidjson/internal/itoa.h	/^inline char* i32toa(int32_t value, ch
 i64	include/rapidjson/document.h	/^        int64_t i64;$/;"	m	union:GenericValue::Number	access:public
 i64toa	include/rapidjson/internal/itoa.h	/^inline char* i64toa(int64_t value, char* buffer) {$/;"	f	namespace:internal	signature:(int64_t value, char* buffer)
 id	ParallelThreadDE.h	/^    int id;$/;"	m	class:Task	access:public
+id	SaveResult.h	/^	int id;$/;"	m	class:SaveResult	access:private
 id	include/MPIHelper.h	/^	int id;$/;"	m	class:MPIHelper	access:private
 idcounter	ParallelThreadDE.h	/^    static int idcounter;$/;"	m	class:Task	access:public
 idcounter	ParallelThreadDE.h	/^int Task::idcounter=0;$/;"	m	class:Task
@@ -3269,6 +3320,7 @@ name	include/rapidjson/document.h	/^    GenericValue<Encoding, Allocator> name; 
 name	include/rapidjson/pointer.h	/^        const Ch* name;             \/\/!< Name of the token. It has null character at the end but it can contain null character.$/;"	m	struct:GenericPointer::Token	access:public
 nameBuffer_	include/rapidjson/pointer.h	/^    Ch* nameBuffer_;                        \/\/!< A buffer containing all names in tokens.$/;"	m	class:GenericPointer	access:private
 newID	include/IDHelper.h	/^		static int newID(const char *file=0){$/;"	f	class:IDHelper	access:public	signature:(const char *file=0)
+next	SaveResult.h	/^	void next(){$/;"	f	class:SaveResult	access:public	signature:()
 next	include/rapidjson/allocators.h	/^        ChunkHeader *next;  \/\/!< Next chunk in the linked list.$/;"	m	struct:MemoryPoolAllocator::ChunkHeader	access:public
 next	include/utils.h	/^		int next(){$/;"	f	class:RandomPermutation	access:public	signature:()
 numDim	ParallelDE.h	/^		int numDim;$/;"	m	class:ParallelDE	access:private
@@ -3283,6 +3335,7 @@ numSlaves	ParallelThreadDE.h	/^    int numSlaves;$/;"	m	class:AutoTaskScheduler	
 numSlaves	ParallelThreadDE.h	/^    int numSlaves;$/;"	m	class:BasicTaskScheduler	access:private
 o	include/rapidjson/document.h	/^        Object o;$/;"	m	union:GenericValue::Data	access:public
 offset_	include/rapidjson/error/error.h	/^    size_t offset_;$/;"	m	struct:ParseResult	access:private
+old_main	main.cpp	/^int old_main(int argc,char *argv[]){$/;"	f	signature:(int argc,char *argv[])
 operator !=	include/rapidjson/document.h	/^    bool operator!=(ConstIterator that) const { return ptr_ != that.ptr_; }$/;"	f	class:GenericMemberIterator	access:public	signature:(ConstIterator that) const
 operator !=	include/rapidjson/document.h	/^    bool operator!=(const Ch* rhs) const { return !(*this == rhs); }$/;"	f	class:GenericValue	access:public	signature:(const Ch* rhs) const
 operator !=	include/rapidjson/document.h	/^    bool operator!=(const GenericValue<Encoding, SourceAllocator>& rhs) const { return !(*this == rhs); }$/;"	f	class:GenericValue	access:public	signature:(const GenericValue<Encoding, SourceAllocator>& rhs) const
@@ -3369,6 +3422,7 @@ os_	include/rapidjson/pointer.h	/^        OutputStream& os_;$/;"	m	class:Generic
 os_	include/rapidjson/writer.h	/^    OutputStream* os_;$/;"	m	class:Writer	access:protected
 oszfunc	include/cec14_test_func.h	/^void oszfunc (double *, double *, int);$/;"	p	signature:(double *, double *, int)
 oszfunc	include/cec14_test_func.h	/^void oszfunc (double *x, double *xosz, int nx)$/;"	f	signature:(double *x, double *xosz, int nx)
+ouputTypeNames	SaveResult.h	/^	void ouputTypeNames(){$/;"	f	class:SaveResult	access:private	signature:()
 out	include/utils.h	/^			ofstream out;$/;"	m	class:Save	access:private
 output	cir.h	/^void output()$/;"	f	class:CirHelper	access:public	signature:()
 output1	cir.h	/^FILE *output1;                    \/* X[0] output *\/$/;"	m	class:CirHelper	access:public
@@ -3410,6 +3464,7 @@ range	include/BasicDE.h	/^		vector<vector<double> >range;$/;"	m	class:BasicDE1	a
 rastrigin_func	include/cec14_test_func.h	/^void rastrigin_func (double *, double *, int , double *,double *, int, int); \/* Rastrigin's  *\/$/;"	p	signature:(double *, double *, int , double *,double *, int, int)
 rastrigin_func	include/cec14_test_func.h	/^void rastrigin_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Rastrigin's  *\/$/;"	f	signature:(double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag)
 readCount_	include/rapidjson/filereadstream.h	/^    size_t readCount_;$/;"	m	class:FileReadStream	access:private
+recordID	SaveResult.h	/^	int recordID;$/;"	m	class:SaveResult	access:private
 recv	include/MPIHelper.h	/^		void recv(double &buf,int src,int tag=TAG4){$/;"	f	class:MPIHelper	access:public	signature:(double &buf,int src,int tag=TAG4)
 recv	include/MPIHelper.h	/^		void recv(double *buf,int count,int src,int tag=TAG){$/;"	f	class:MPIHelper	access:public	signature:(double *buf,int count,int src,int tag=TAG)
 recv	include/MPIHelper.h	/^		void recv(int &buf,int src,int tag=TAG2){$/;"	f	class:MPIHelper	access:public	signature:(int &buf,int src,int tag=TAG2)
@@ -3427,12 +3482,15 @@ rosenbrock_func	include/cec14_test_func.h	/^void rosenbrock_func (double *, doub
 rosenbrock_func	include/cec14_test_func.h	/^void rosenbrock_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Rosenbrock's *\/$/;"	f	signature:(double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag)
 rotatefunc	include/cec14_test_func.h	/^void rotatefunc (double *x, double *xrot, int nx,double *Mr)$/;"	f	signature:(double *x, double *xrot, int nx,double *Mr)
 rotatefunc	include/cec14_test_func.h	/^void rotatefunc (double*,double*,int, double*);$/;"	p	signature:(double*,double*,int, double*)
+s	SaveResult.h	/^		union Value{int i;double d;char s[50];};$/;"	m	union:SaveResult::AllType::Value	access:public
 s	include/rapidjson/document.h	/^        String s;$/;"	m	union:GenericValue::Data	access:public
 s	include/rapidjson/document.h	/^    const Ch* const s; \/\/!< plain CharType pointer$/;"	m	struct:GenericStringRef	access:public
 s	include/rapidjson/reader.h	/^    Stream s;$/;"	m	class:internal::StreamLocalCopy	access:public
 s	include/rapidjson/reader.h	/^    Stream& s;$/;"	m	class:internal::StreamLocalCopy	access:public
 save	ParallelDE.h	/^		Save *save;$/;"	m	class:ParallelDE	access:private
 save	ParallelThreadDE.h	/^    Save *save;$/;"	m	class:ParallelThreadDE	access:private
+save	SaveResult.h	/^			void save(ofstream&out){$/;"	f	class:SaveResult::AllType	access:public	signature:(ofstream&out)
+save	SaveResult.h	/^	void save(){$/;"	f	class:SaveResult	access:public	signature:()
 saveConfigData	main.cpp	/^	void saveConfigData(int id,const char *f,const char *algorithm,const char *param,int run,int MaxRun,int numOfProcesses,int MaxFEs,int PopSize,int NumDim,double F,double CR,const char *state,double usedTime,double absError,$/;"	f	signature:(int id,const char *f,const char *algorithm,const char *param,int run,int MaxRun,int numOfProcesses,int MaxFEs,int PopSize,int NumDim,double F,double CR,const char *state,double usedTime,double absError, vector<double>&x,double fx)
 schaffer_F7_func	include/cec14_test_func.h	/^void schaffer_F7_func (double *, double *, int , double *,double *, int, int); \/* Schwefel's F7 *\/$/;"	p	signature:(double *, double *, int , double *,double *, int, int)
 schaffer_F7_func	include/cec14_test_func.h	/^void schaffer_F7_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Schwefel's 1.2  *\/$/;"	f	signature:(double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag)
@@ -3445,6 +3503,7 @@ send	include/MPIHelper.h	/^		void send(double *buf,int count,int dest,int tag=TA
 send	include/MPIHelper.h	/^		void send(double buf,int dest,int tag=TAG4){$/;"	f	class:MPIHelper	access:public	signature:(double buf,int dest,int tag=TAG4)
 send	include/MPIHelper.h	/^		void send(int *buf,int count,int dest,int tag=TAG1){$/;"	f	class:MPIHelper	access:public	signature:(int *buf,int count,int dest,int tag=TAG1)
 send	include/MPIHelper.h	/^		void send(int buf,int dest,int tag=TAG2){$/;"	f	class:MPIHelper	access:public	signature:(int buf,int dest,int tag=TAG2)
+set	SaveResult.h	/^	void set(const char *name,AllType v){$/;"	f	class:SaveResult	access:public	signature:(const char *name,AllType v)
 setName	include/functions.h	/^		void setName(const char *s){$/;"	f	class:Function	access:protected	signature:(const char *s)
 setName	include/functions.h	/^	void setName(const char *n){$/;"	f	class:EA	access:protected	signature:(const char *n)
 setNumDim	include/functions.h	/^		void setNumDim(int n){numDim=n;}$/;"	f	class:Function	access:public	signature:(int n)
@@ -3456,6 +3515,7 @@ setXY	include/utils.h	/^		void setXY(const char *x,const char *y){$/;"	f	class:S
 setinit	cir.h	/^void setinit()$/;"	f	class:CirHelper	access:public	signature:()
 settling_time	cir.h	/^double settling_time;$/;"	m	class:CirHelper	access:public
 settlingtime	cir.h	/^int settlingtime;$/;"	m	class:CirHelper	access:public
+setupID	SaveResult.h	/^	void setupID(){$/;"	f	class:SaveResult	access:private	signature:()
 shiftfunc	include/cec14_test_func.h	/^void shiftfunc (double *x, double *xshift, int nx,double *Os)$/;"	f	signature:(double *x, double *xshift, int nx,double *Os)
 shiftfunc	include/cec14_test_func.h	/^void shiftfunc (double*,double*,int,double*);$/;"	p	signature:(double*,double*,int,double*)
 simulateTo	cir.h	/^void simulateTo(double endtime)$/;"	f	class:CirHelper	access:public	signature:(double endtime)
@@ -3544,6 +3604,8 @@ tx	ParallelDE.h	/^		vector<double>tx;$/;"	m	class:ParallelDE	access:private
 tx	ParallelThreadDE.h	/^    vector<double>tx;$/;"	m	class:ParallelThreadDE	access:private
 tx	include/BasicDE.h	/^		vector<double>tx;$/;"	m	class:BasicDE	access:private
 tx	include/BasicDE.h	/^		vector<double>tx;$/;"	m	class:BasicDE1	access:private
+type	SaveResult.h	/^		int type;$/;"	m	class:SaveResult::AllType	access:private
+type	SaveResult.h	/^	vector<string>type;$/;"	m	class:SaveResult	access:private
 type_	include/rapidjson/encodedstream.h	/^    UTFType type_;$/;"	m	class:AutoUTFInputStream	access:private
 type_	include/rapidjson/encodedstream.h	/^    UTFType type_;$/;"	m	class:AutoUTFOutputStream	access:private
 u	include/functions.h	/^static double u(double x,double a,double k,double m){$/;"	f	signature:(double x,double a,double k,double m)
@@ -3589,9 +3651,11 @@ userBuffer_	include/rapidjson/allocators.h	/^    void *userBuffer_;          \/\
 uv	cir.h	/^double	overshoot,undershoot,PF1,OF4,OF2,ov,uv,time_con;$/;"	m	class:CirHelper	access:public
 v	ParallelThreadDE.h	/^        int v[2]; double vv[2];$/;"	m	struct:AutoTaskScheduler::TwoValue	access:public
 valid_	include/rapidjson/pointer.h	/^        bool valid_;        \/\/!< Whether the parsing is valid.$/;"	m	class:GenericPointer::PercentDecodeStream	access:private
+value	SaveResult.h	/^		Value value;$/;"	m	class:SaveResult::AllType	access:private
 value	include/rapidjson/document.h	/^    GenericValue<Encoding, Allocator> value;    \/\/!< value of member.$/;"	m	struct:GenericMember	access:public
 value	include/rapidjson/rapidjson.h	/^template <> struct STATIC_ASSERTION_FAILURE<true> { enum { value = 1 }; };$/;"	e	enum:STATIC_ASSERTION_FAILURE::__anon1
 valueCount	include/rapidjson/writer.h	/^        size_t valueCount;  \/\/!< number of values in this level$/;"	m	struct:Writer::Level	access:public
+vs	SaveResult.h	/^	vector<AllType> vs;$/;"	m	class:SaveResult	access:private
 vv	ParallelThreadDE.h	/^        int v[2]; double vv[2];$/;"	m	struct:AutoTaskScheduler::TwoValue	access:public
 wcstoimax	include/rapidjson/msinttypes/inttypes.h	311;"	d
 wcstoumax	include/rapidjson/msinttypes/inttypes.h	312;"	d
@@ -3627,6 +3691,7 @@ zero	cir.h	78;"	d
 ~ParallelDE	ParallelDE.h	/^		~ParallelDE(){$/;"	f	class:ParallelDE	access:public	signature:()
 ~ParallelThreadDE	ParallelThreadDE.h	/^        ~ParallelThreadDE(){$/;"	f	class:ParallelThreadDE	access:public	signature:()
 ~Save	include/utils.h	/^		~Save(){$/;"	f	class:Save	access:public	signature:()
+~SaveResult	SaveResult.h	/^	~SaveResult(){$/;"	f	class:SaveResult	access:public	signature:()
 ~SettingParser	include/settingParser.h	/^		~SettingParser(){$/;"	f	class:SettingParser	access:public	signature:()
 ~Stack	include/rapidjson/internal/stack.h	/^    ~Stack() {$/;"	f	class:internal::Stack	access:public	signature:()
 ~StreamLocalCopy	include/rapidjson/reader.h	/^    ~StreamLocalCopy() { original_ = s; }$/;"	f	class:internal::StreamLocalCopy	access:public	signature:()

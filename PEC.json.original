@@ -1,11 +1,11 @@
 {
-		"Name":"Test PEC.json",
+		"Name":"PEC.json",
 		"F":0.5,
 		"CR":0.9,
 		"MaxFEs":15000,
 		"NumDim":7,
 		"PopSize":50,
-		"MaxRun":1,
+		"MaxRun":30,
 		"Range":[
 			[100,100e3],
 			[100,100e3],
