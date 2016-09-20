@@ -1,69 +1,43 @@
-all:simpleTest
+cc=mpic++.mpich2
+exe=mpirun.mpich2
+out=lastParallelDE-linjunhao
+
+all:build
+#all:simpleTest
+
+build:main.cpp
+	$(cc) -o $(out) -DUSE_MPI main.cpp
+
 simpleTest:main.cpp
 	g++ main.cpp
+	make rmdata
 	./a.out
+	cat SaveResult-0.txt
 
 test5:main.cpp
-	mpic++.mpich -DUSE_MPI main.cpp
-	mpirun.mpich -n 4 ./a.out 
+	$(cc) -o $(out) -DUSE_MPI main.cpp
+	$(exe) -f machinefile -n 4 ./$(out)
 	echo OK!
 
-test4:main.cpp
-	cat /dev/null >a
-	cat /dev/null >b
-	mpic++.mpich -DUSE_MPI main.cpp
-	mpirun.mpich -n 4 ./a.out > a
-	mpic++.mpich -DUSE_MPI -DORIGINAL main.cpp
-	mpirun.mpich -n 4 ./a.out > c
-	mpic++.mpich -DUSE_MPI -DTHREAD main.cpp
-	mpirun.mpich -n 4 ./a.out > b
-#	cat b
-	diff b c
-	echo ok~
-
-test3:parallel2
-
-test2:main.cpp
-	mpic++.mpich -DUSE_MPI main.cpp
-	mpirun.mpich -n 4 ./a.out | tee test.log
-	vim test.log
-	
-serial:main.cpp
-	g++ -pthread main.cpp
-	./a.out
-
-
-parallel:main.cpp
-	mpic++.mpich -DUSE_MPI main.cpp
-	./b.sh 4
-
 parallel1:main.cpp
-	mpic++.mpich -DUSE_MPI main.cpp
-	mpirun.mpich -f machinefile -n 4 ./a.out
-
-parallel2:main.cpp
-	mpic++.mpich -DUSE_MPI main.cpp
-	mpirun.mpich -n 4 ./a.out
-
-test:test.cpp
-	g++ -o test test.cpp
-	./test
+	$(cc) -DUSE_MPI main.cpp
+	$(exe) -f machinefile -n 4 ./a.out
 
 
-clean:
-#	rm -f ./*.txt
-	rm -f ./*.figdata
-	rm -f *.out
+clean:rmdata
 
 rmdata:
 	rm -f ./Data*.txt
 	rm -f ./Run-conf*.txt
 	rm -f ./SaveResult-*.txt
-	rm -f *.out
+	rm -f ./Result.txt
+	rm -f ./Result-*.txt
+	rm -f ./Result_*.txt
+	rm -f ./DefaultResult.txt
 	rm -f ID.txt
 
-doid:idtest.cpp
-	g++ -o idtest idtest.cpp
-	./idtest
+txt:
+	ls|grep .txt
+
 	
 	

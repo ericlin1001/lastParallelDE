@@ -1,11 +1,11 @@
 {
-		"Name":"PEC.json.real",
+		"Name":"PEC.json.test",
 		"F":0.5,
-		"CR":0.1,
-		"MaxFEs":15000,
+		"CR":0.9,
+		"MaxFEs":150,
 		"NumDim":7,
-		"PopSize":100,
-		"MaxRun":30,
+		"PopSize":50,
+		"MaxRun":4,
 		"Range":[
 			[100,100e3],
 			[100,100e3],

@@ -3,8 +3,8 @@
 #else
 #include "include/functions.h"
 #include "cir.h"
-#define UNUSED 1
-DefFunction(PECFunction,UNUSED,UNUSED,0)
+#define UNUSED_VALUE 1
+DefFunction(PECFunction,UNUSED_VALUE,UNUSED_VALUE,0)
 	CirHelper c;
 	return c._objective(xs);
 EndDef

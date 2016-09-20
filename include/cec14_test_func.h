@@ -13,6 +13,11 @@
 #include <math.h>
 #include <malloc.h>
 
+//#define UNUSED(expr) do{static_cast<void>(expr);}while(0);
+//void inline UNUSED(void){} 
+template<typename T>
+void inline UNUSED(const T&){} 
+
 #define INF 1.0e99
 #define EPS 1.0e-14
 #define E  2.7182818284590452353602874713526625
@@ -114,7 +119,7 @@ void cec14_test_func(double *x, double *f, int nx, int mx,int func_num)
 				printf("\nError: there is insufficient memory available!\n");
 			for (i=0; i<nx*nx; i++)
 			{
-				fscanf(fpt,"%lf",&M[i]);
+				UNUSED(fscanf(fpt,"%lf",&M[i]));
 			}
 		}
 		else
@@ -124,7 +129,7 @@ void cec14_test_func(double *x, double *f, int nx, int mx,int func_num)
 				printf("\nError: there is insufficient memory available!\n");
 			for (i=0; i<cf_num*nx*nx; i++)
 			{
-				fscanf(fpt,"%lf",&M[i]);
+				UNUSED(fscanf(fpt,"%lf",&M[i]));
 			}
 		}
 		fclose(fpt);
@@ -144,7 +149,7 @@ void cec14_test_func(double *x, double *f, int nx, int mx,int func_num)
 			printf("\nError: there is insufficient memory available!\n");
 			for(i=0;i<nx;i++)
 			{
-				fscanf(fpt,"%lf",&OShift[i]);
+				UNUSED(fscanf(fpt,"%lf",&OShift[i]));
 			}
 		}
 		else
@@ -156,13 +161,13 @@ void cec14_test_func(double *x, double *f, int nx, int mx,int func_num)
 			{
 				for (j=0;j<nx;j++)
 				{
-					fscanf(fpt,"%lf",&OShift[i*nx+j]);
+					UNUSED(fscanf(fpt,"%lf",&OShift[i*nx+j]));
 				}
-				fscanf(fpt,"%*[^\n]%*c"); 
+				UNUSED(fscanf(fpt,"%*[^\n]%*c")); 
 			}
 			for (j=0;j<nx;j++)
 			{
-				fscanf(fpt,"%lf",&OShift[(cf_num-1)*nx+j]);
+				UNUSED(fscanf(fpt,"%lf",&OShift[(cf_num-1)*nx+j]));
 			}
 				
 		}
@@ -184,7 +189,7 @@ void cec14_test_func(double *x, double *f, int nx, int mx,int func_num)
 				printf("\nError: there is insufficient memory available!\n");
 			for(i=0;i<nx;i++)
 			{
-				fscanf(fpt,"%d",&SS[i]);
+				UNUSED(fscanf(fpt,"%d",&SS[i]));
 			}	
 			fclose(fpt);
 		}
@@ -201,7 +206,7 @@ void cec14_test_func(double *x, double *f, int nx, int mx,int func_num)
 				printf("\nError: there is insufficient memory available!\n");
 			for(i=0;i<nx*cf_num;i++)
 			{
-				fscanf(fpt,"%d",&SS[i]);
+				UNUSED(fscanf(fpt,"%d",&SS[i]));
 			}
 			fclose(fpt);
 		}

@@ -1,3 +1,5 @@
+#ifndef PARALLELDE_H
+#define PARALLELDE_H
 class ParallelDE:public EA
 {
 	private:
@@ -363,3 +365,6 @@ class ParallelDE:public EA
 			}
 		}
 };
+#else
+#endif
+
