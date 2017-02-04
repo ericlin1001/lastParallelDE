@@ -1,0 +1,97 @@
+<h1 id="get-the-last-programs-result">Get the last program's Result</h1>
+<pre><code>This project is to get last program&#39;s  result on the current experimental settings.</code></pre>
+<h2 id="cluster-settinginfo">Cluster Setting&amp;Info:</h2>
+<pre><code>```
+All the computers:
+    ComputerNo. Note    hasChecked  
+    1           MainHost   
+    2~23        i3CPU   2cores,8G(No2)  
+    55~58       i5CPU  
+    59~95       i7CPU   4cores,4G(No59)  
+    96~200      i5CPU   4cores,12G(No96)  
+```</code></pre>
+<pre><code>    i3: 40cores
+    i5: 400cores
+    i7: 140cores</code></pre>
+<pre><code>    No.     Memory  
+    96~104  16G  
+    145~131 32G  
+    others  unknow</code></pre>
+<pre><code>    No.             InTheSameSwitch
+    2~18            1
+    19~23,96~108    2
+    146~163         3
+    128~145         4
+    183~200         5
+    164~182         6
+    109~127         7</code></pre>
+<h3 id="run-one-serial-program-on-each-computer">Run one serial program on each computer:</h3>
+<p>one core's performance: i7&gt;i5&gt;i3</p>
+<h2 id="experimental-setting">Experimental Setting</h2>
+<ol style="list-style-type: decimal">
+<li><p>When computers are different:</p>
+<p>Purpose: Keep each core processes more data, such that the differences in cpu can be realized.</p></li>
+</ol>
+<pre><code>            Exp5    Exp6
+            cores   cores
+    i3      2       10
+    i5      2       10
+    i7      2       10
+    total   6       30
+    computer1,1,1   5,3,3
+
+    i3 no:17~19 22~23
+    i5 no:</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>When computers are the same:</li>
+</ol>
+<pre><code>            Exp1    Exp2    Exp3    Exp4
+            cores   cores   cores   cores
+    i5      5       6       30      31
+    computer2       2       8       8
+    no. 70~78</code></pre>
+<h2 id="whats-next">What's next?</h2>
+<ol style="list-style-type: decimal">
+<li>Generate a machine file.
+<ol style="list-style-type: decimal">
+<li>Exp1(5 cores)</li>
+</ol>
+<pre><code>chen-510130:4
+chen-510131:1</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Exp2(6 cores)</li>
+</ol>
+<pre><code>chen-510130:4
+chen-510131:2</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Exp3(30 cores)</li>
+</ol>
+<pre><code>chen-510130:4
+chen-510131:2</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Exp4(31 cores)</li>
+</ol></li>
+<li>Using a script to run all Exps.</li>
+</ol>
+<h1 id="test-table">Test Table</h1>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Markdown</th>
+<th align="left">Less</th>
+<th align="left">Pretty</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><em>Still</em></td>
+<td align="left"><code>renders</code></td>
+<td align="left"><strong>nicely</strong></td>
+</tr>
+<tr class="even">
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">3</td>
+</tr>
+</tbody>
+</table>

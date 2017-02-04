@@ -2,8 +2,10 @@ cc=mpic++.mpich2
 exe=mpirun.mpich2
 out=lastParallelDE-linjunhao
 
-all:build
+all:viewReadme 
 #all:simpleTest
+viewReadme:readme.md
+	md readme.md
 
 build:main.cpp
 	$(cc) -o $(out) -DUSE_MPI main.cpp
